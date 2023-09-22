@@ -123,6 +123,7 @@ class Regression:
         X = self.reciprocals.transform(X)
         X = self.interactions.transform(X)
         X = self.selection2.transform(X)
+        print("> Training XGBoost")
         self.tree.fit(X, y)
 
         end = time.time()
