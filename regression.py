@@ -59,6 +59,7 @@ class Regression:
             colsample_bytree=0.8,
             subsample=0.8,
             random_state=42,
+            n_jobs=-1,
         )
         
         # run preprocessing
@@ -645,6 +646,7 @@ class FeatureSelector:
             colsample_bytree=0.8,
             subsample=0.8,
             random_state=0,
+            n_jobs=-1,
         )
         tree.fit(X, y)
 
